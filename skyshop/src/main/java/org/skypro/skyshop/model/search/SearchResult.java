@@ -14,7 +14,7 @@ public class SearchResult {
     public static SearchResult fromSearchable(Searchable searchable) {
         return new SearchResult(
                 searchable.getId().toString(),
-                searchable.getSearchTerm(),
+                searchable.getName(),
                 searchable.getContentType());
     }
 }

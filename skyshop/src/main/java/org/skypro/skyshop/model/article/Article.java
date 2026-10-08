@@ -22,6 +22,7 @@ public class Article implements Searchable {
         return article + "\n" + text;
     }
 
+    @JsonIgnore
     @Override
     public String getSearchTerm() {
         return toString();
@@ -35,6 +36,10 @@ public class Article implements Searchable {
 
     public String getName() {
         return article;
+    }
+
+    public String getText() {
+        return text;
     }
 
     @Override
